@@ -1,0 +1,293 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="box">
+        <h1>Sudoku Solver</h1>
+        <div class="popup-wrapper">
+
+            <div class="popup">
+            <div class="popup-close">x</div><br>
+            <div class="popup-content">
+                <h1 style="color: red;">Issue detected</h1><br>
+                <p>INVALID SUDOKU</p>
+            </div>
+            </div>
+        </div>
+        <div class="container">
+            <br><br>
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                    <td>
+                        <input type="text" class="block">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <button class="btn" type="submit">Submit</button>
+    </div>
+    <script src="./js/solver.js"></script>
+    <script src="./js/app.js"></script> 
+</body>
+</html>
