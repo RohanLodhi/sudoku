@@ -91,3 +91,6 @@ h1{
   .display{
       display: none;
   }
+  .intro{
+      color: red;
+  }
